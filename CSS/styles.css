@@ -287,3 +287,74 @@ body {
     background-color: rgba(0, 128, 0, 0.8); /* Колір виділеного столу */
     color: #fff;
 }
+
+/* Стиль для сторінки меню */
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px; /* Максимальна ширина контейнера */
+    margin: 0 auto;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.menu-item {
+    background-color: rgba(255, 255, 255, 0.2); /* Напівпрозорий білий фон */
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Напівпрозорий білий контур */
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    color: #fff; /* Білий колір тексту */
+}
+
+.menu-item p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.menu-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.summary {
+    margin-top: 30px;
+    color: #fff; /* Білий колір тексту для заголовків */
+}
+
+.summary h2 {
+    font-size: 24px;
+    color: #fff; /* Білий колір тексту */
+}
+
+.summary ul {
+    list-style-type: none;
+    padding: 0;
+    color: #fff; /* Білий колір тексту для обраних страв */
+}
+
+.summary p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #fff; /* Білий колір тексту для загальної суми */
+}

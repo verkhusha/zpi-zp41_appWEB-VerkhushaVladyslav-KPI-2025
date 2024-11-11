@@ -13,5 +13,34 @@
         <h1><a href="index.html">Ресторан "Смак"</a></h1>
         <h2>Меню</h2>
     </div>
+    <div class="menu-container">
+        <div class="menu-items">
+            <div class="menu-item">
+                <p>Салат Цезар - 150 грн</p>
+                <button class="menu-button" onclick="selectDish('Салат Цезар', 150)">Вибрати</button>
+            </div>
+            <div class="menu-item">
+                <p>Борщ з м’ясом - 120 грн</p>
+                <button class="menu-button" onclick="selectDish('Борщ з м’ясом', 120)">Вибрати</button>
+            </div>
+            <div class="menu-item">
+                <p>Стейк з яловичини - 350 грн</p>
+                <button class="menu-button" onclick="selectDish('Стейк з яловичини', 350)">Вибрати</button>
+            </div>
+            <div class="menu-item">
+                <p>Рибне асорті - 300 грн</p>
+                <button class="menu-button" onclick="selectDish('Рибне асорті', 300)">Вибрати</button>
+            </div>
+            <!-- Тут я можу додати ще страви -->
+        </div>
+        <div class="summary">
+            <h2>Обрані страви</h2>
+            <ul id="selected-dishes"></ul>
+            <p>Загальна сума: <span id="total-price">0</span> грн</p>
+            <button class="menu-button" onclick="goToPayment()">Далі</button>
+        </div>
+    </div>
+
+    <script src="./js/menu.js"></script>
 </body>
 </html>
