@@ -15,6 +15,14 @@
             <h2>Оплата</h2>
         </div>
         <div class="payment-options">
+            <div class="form-group">
+                <label for="name">Ім'я</label>
+                <input type="text" id="name" placeholder="Ваше ім'я">
+            </div>
+            <div class="form-group">
+                <label for="phone">Номер телефону</label>
+                <input type="tel" id="phone" placeholder="Ваш номер телефону" pattern="\+?\d{10,15}">
+            </div>
             <button class="menu-button" onclick="processPayment()">Оплатити</button>
             <a href="index.html" class="menu-button">На головне меню</a>
         </div>
@@ -22,6 +30,14 @@
 
     <script>
         function processPayment() {
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+
+            if (!name || !phone) {
+                alert("Будь ласка, введіть ім'я та номер телефону для продовження.");
+                return;
+            }
+
             alert("Оплата успішно пройшла");
         }
     </script>

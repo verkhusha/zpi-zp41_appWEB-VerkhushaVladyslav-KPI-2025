@@ -39,9 +39,9 @@ body {
     flex-direction: column; /* Розташування елементів у колонку */
     align-items: center; /* Вирівнювання по горизонталі в центрі */
     justify-content: top; /* Вирівнювання по вертикалі в центрі */
-    height: 100vh; /* Встановлюємо висоту на весь екран */
+    height: 200vh; /* Встановлюємо висоту на весь екран */
     text-align: center; /* Центруємо текст */
-    padding-top: 20px; /* Відступ внутрішній зверху */
+    padding-top: 5px; /* Відступ внутрішній зверху */
     margin-bottom: 10px;  /* Відступ зовнішній зверху */
     font-family: 'Kaisei Opti', sans-serif;
 }
@@ -49,16 +49,16 @@ body {
 .header h1 a {
     font-size: 80px;
     margin-bottom: 20px;
-    text-decoration: none; /* Видалити підкреслення */
+    text-decoration: none; /* Видаляє підкреслення */
     color: #fff; /* Колір тексту заголовка */
 }
 
 .header h1 a:hover {
-    text-decoration: underline; /* Додає підкреслення при наведенні */
+    text-decoration: underline; /* Підкреслення при наведенні */
 }
 
 .header h2 {
-    font-size: 40px;
+    font-size: 20px;
     color: #fff;
     margin-top: 10px;
 }
@@ -81,7 +81,7 @@ body {
 }
 
 .nav {
-    margin-top: 100px; /* Опускає меню нижче на сторінці */
+    margin-top: 5px; /* Опускає меню нижче на сторінці */
     display: flex;
     gap: 40px; /* Відстань між посиланнями */
     justify-content: center;
@@ -100,6 +100,61 @@ body {
 .nav a:hover {
     color: #000; /* Зміна кольору тексту при наведенні */
 }
+
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px; /* Відступ від заголовка */
+}
+
+.additional-info {
+    color: #fff;
+    max-width: 800px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cuisine-section, .famous-visitors-section {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.cuisine-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cuisine-list {
+    line-height: 1.8; /* Для більшого інтервалу */
+}
+
+.famous-visitors-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.famous-visitors-section th, .famous-visitors-section td {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 10px;
+    font-size: 16px;
+}
+
+.famous-visitors-section th {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+.famous-visitors-section td {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 
 /* Стиль для контактної інформації */
 .contact-info {
@@ -378,4 +433,36 @@ body {
 
 .payment-options .menu-button {
     margin-bottom: 50px; /* Відступ між кнопками */
+}
+
+/* Стилі для полів вводу інформації для оплати та кнопок */
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.payment-options .menu-button {
+    margin-bottom: 50px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group label {
+    font-size: 18px;
+    color: #fff;
+}
+
+.form-group input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
