@@ -43,6 +43,7 @@ body {
     text-align: center; /* Центруємо текст */
     padding-top: 20px; /* Відступ внутрішній зверху */
     margin-bottom: 10px;  /* Відступ зовнішній зверху */
+    font-family: 'Kaisei Opti', sans-serif;
 }
 
 .header h1 a {
@@ -71,6 +72,12 @@ body {
     margin-top: 50px;
     max-width: 800px;
     line-height: 30px;
+}
+
+.description {
+    max-width: 600px; /* Максимальна ширина для абзацу */
+    margin: 20px 0; /* Відступи для верхнього і нижнього країв */
+    color: white; /* Встановлюємо білий колір тексту */
 }
 
 .nav {
@@ -359,4 +366,16 @@ body {
     font-size: 20px;
     margin-top: 10px;
     color: #fff; /* Білий колір тексту для загальної суми */
+}
+
+/* Додаткові стилі для кнопок на сторінці оплати */
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px; /* Відступ зверху */
+}
+
+.payment-options .menu-button {
+    margin-bottom: 50px; /* Відступ між кнопками */
 }
