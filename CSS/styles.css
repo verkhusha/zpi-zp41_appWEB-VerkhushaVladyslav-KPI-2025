@@ -20,7 +20,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/img/background.jpg); /* Зображення заднього фону*/
+    background-image: url(/img/background.jpg); /* Зображення вфавфивифзаднього фону*/
     background-size: cover;
     background-position: center;
     filter: blur(5px) brightness(0.6); /* Розмиття і затемнення */
