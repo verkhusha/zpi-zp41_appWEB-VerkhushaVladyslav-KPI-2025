@@ -27,6 +27,13 @@ body {
     z-index: -1; /* Розміщує фон позаду контенту */
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    text-align: center;
+}
+
 .header {
     display: flex; /* Використовуємо Flexbox */
     flex-direction: column; /* Розташування елементів у колонку */
@@ -35,13 +42,7 @@ body {
     height: 100vh; /* Встановлюємо висоту на весь екран */
     text-align: center; /* Центруємо текст */
     padding-top: 20px; /* Відступ внутрішній зверху */
-    margin-top: 80px;  /* Відступ зовнішній зверху */
-}
-
-.description {
-    max-width: 600px; /* Максимальна ширина для абзацу */
-    margin: 20px 0; /* Відступи для верхнього і нижнього країв */
-    color: white; /* Встановлюємо білий колір тексту */
+    margin-bottom: 10px;  /* Відступ зовнішній зверху */
 }
 
 .header h1 a {
@@ -52,7 +53,7 @@ body {
 }
 
 .header h1 a:hover {
-    text-decoration: underline; /* Додати підкреслення при наведенні */
+    text-decoration: underline; /* Додає підкреслення при наведенні */
 }
 
 .header h2 {
@@ -293,9 +294,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    max-width: 600px; /* Максимальна ширина контейнера */
-    margin: 0 auto;
+    margin-top: 0;
+    max-width: 600px;
 }
 
 .menu-items {
@@ -303,6 +303,7 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    margin-bottom: 20px; /* Відстань між меню і обраними стравами */
 }
 
 .menu-item {
@@ -338,8 +339,9 @@ body {
 }
 
 .summary {
-    margin-top: 30px;
-    color: #fff; /* Білий колір тексту для заголовків */
+    margin-top: 20px;
+    color: #fff;
+    width: 100%; /* Ширина summary збігається з меню */
 }
 
 .summary h2 {

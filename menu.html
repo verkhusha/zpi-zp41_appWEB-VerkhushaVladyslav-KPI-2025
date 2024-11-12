@@ -9,10 +9,11 @@
 </head>
 <body>
     <div class="background"></div>
-    <div class="header">
-        <h1><a href="index.html">Ресторан "Смак"</a></h1>
-        <h2>Меню</h2>
-    </div>
+    <div class="content">
+        <div class="header">
+            <h1><a href="index.html">Ресторан "Смак"</a></h1>
+            <h2>Меню</h2>
+        </div>
     <div class="menu-container">
         <div class="menu-items">
             <div class="menu-item">
@@ -31,7 +32,6 @@
                 <p>Рибне асорті - 300 грн</p>
                 <button class="menu-button" onclick="selectDish('Рибне асорті', 300)">Вибрати</button>
             </div>
-            <!-- Тут я можу додати ще страви -->
         </div>
         <div class="summary">
             <h2>Обрані страви</h2>
@@ -40,7 +40,7 @@
             <button class="menu-button" onclick="goToPayment()">Далі</button>
         </div>
     </div>
-
+    </div>
     <script src="./js/menu.js"></script>
 </body>
 </html>
